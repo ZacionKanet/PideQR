@@ -1,0 +1,31 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title> Bienvenido a  PideQR {{ username }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PideQR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <img alt="Logo PideQR" src="../../assets/images/PIDEQR.svg" />
+      <ion-card-header>
+        <ion-card-title>Bienvenido a PideQR</ion-card-title>
+        <ion-card-subtitle>Escanea el código de tu mesa</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Entra a tu cuenta o crea una nueva usando los botones de abajo
+      </ion-card-content>
+    </ion-card> 
+    <div class="centrado">
+    <ion-card>
+      <ion-button (click)="crearCuenta()">Crear</ion-button><ion-button (click)="irLogin()">Entrar</ion-button></ion-card></div></div>
+</ion-content>
+
+
